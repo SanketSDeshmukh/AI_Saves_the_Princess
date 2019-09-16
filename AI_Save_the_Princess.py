@@ -8,9 +8,9 @@ def displayPathtoPrincess(n,grid):
     path = []
     for i, elem in enumerate(grid):
         for m in range(0, len(elem)):
-            #if elem[m] == "m":
-            #    robot_row = i
-            #    robot_col = m
+            if elem[m] == "m":
+                robot_row = i
+                robot_col = m
             if elem[m] == "p":
                 princess_row = i
                 princess_col = m
